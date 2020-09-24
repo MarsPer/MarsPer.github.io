@@ -114,10 +114,10 @@ transform: translateZ(-100px) rotateX(-720deg);
 .box2d-2:nth-of-type(3){left:-200px; }
 .box2d-2:nth-of-type(4){ top:400px; }
 
-.wrap2d-2:hover .box2d:nth-of-type(1){ top:0;} 
-.wrap2d-2:hover .box2d:nth-of-type(2){ left:200px;} 
-.wrap2d-2:hover .box2d:nth-of-type(3){ left:0;} 
-.wrap2d-2:hover .box2d:nth-of-type(4){ top:200px;} 
+.wrap2d-2:hover .box2d-2:nth-of-type(1){ top:0;} 
+.wrap2d-2:hover .box2d-2:nth-of-type(2){ left:200px;} 
+.wrap2d-2:hover .box2d-2:nth-of-type(3){ left:0;} 
+.wrap2d-2:hover .box2d-2:nth-of-type(4){ top:200px;} 
 
 /* .box .panel:nth-of-type(3) {
 	background: #FFF;
