@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depth-BMW</title>
+    <style>
+        *{margin:0;padding:0;}
+        .container{
+            width:100%;height:100%;max-width: 1024px;margin: 0 auto;
+            position: relative;
+        }
+        img{width:100%;height:auto;}
+        .scene{position: absolute;width:100%;height:100%;left:0;top:0;}
+        .layer{position: absolute;width:100%;height:100%;left:0;top:0;}
+        .layer2 img{position:absolute;width:50%;left: 10%;top: 15%;}
+        .layer3 img{position:absolute;width:54%;left: 38%;top: 18%;}
+        .layer4 img{position:absolute;width:54%;left: 30%;top: 20%;}
+        .layer5 img{position:absolute;width:10%;left: 70%;top: 65%;}
+    </style>
+</head>
+<body>
+    <div id="container" class="container">
+        <img src="https://marsper.github.io/test/src/images/01.png">
+		<ul id="scene" class="scene">
+			<li class="layer layer2" data-depth="0.40"><img src="https://marsper.github.io/test/src/images/02.png"></li>
+			<li class="layer layer3" data-depth="0.20"><img src="https://marsper.github.io/test/src/images/03.png"></li>
+			<li class="layer layer4" data-depth="-0.40"><img src="https://marsper.github.io/test/src/images/04.png"></li>
+			<li class="layer layer5" data-depth="-0.20"><img src="https://marsper.github.io/test/src/images/05.png"></li>
+		</ul>
+	</div>
+    <script src="https://marsper.github.io/test/src/images/jquery.js"></script>
+    <script src="https://marsper.github.io/test/src/images/jquery.parallax.min.js"></script>
+    <script>
+        $('#scene').parallax({
+            // calibrateX: false,
+            // calibrateY: true,
+            // invertX: false,
+            // invertY: true,
+            // limitX: false,
+            // limitY: 10,
+            // scalarX: 2,
+            // scalarY: 8,
+            // frictionX: 0.2,
+            // frictionY: 0.8
+        });
+    </script>
+</body>
+</html>
