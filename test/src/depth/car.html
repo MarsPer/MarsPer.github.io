@@ -19,10 +19,6 @@
 <body>
     <div class="wrap">
         <div class="item item1"></div>
-        <div class="item item2"></div>
-        <div class="item item3"></div>
-        <div class="item item4"></div>
-        <div class="item item5"></div>
     </div>
     <script src="https://marsper.github.io/test/src/lib-js/jquery.js"></script>
     <script src="https://marsper.github.io/test/src/lib-js/TweenMax.min.js"></script>
@@ -35,7 +31,6 @@
         for(var i = 0;i<9;i++){
             TweenMax.fromTo($('.item'+i),0.4,{x:-500,autoAlpha:0},{x:0,autoAlpha:1,delay:0.2*i})
         }
-        // TweenMax.fromTo('')
     </script>
 </body>
 </html>
